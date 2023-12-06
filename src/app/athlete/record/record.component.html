@@ -1,0 +1,23 @@
+
+<table *ngIf="!recordIsEmpty">
+    <thead>
+        <tr>
+            <th>Event</th>
+            <th>Organizer</th>
+            <th>Date</th>
+            <th>Won</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let event of recordArray">
+            <td>{{event.eventName}}</td>
+            <td>{{event.organizer}}</td>
+            <td>{{event.date | date}}</td>
+            <td>{{event.won}}</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="callToAction" *ngIf="recordIsEmpty">
+    <app-call-to-action></app-call-to-action>
+</div>

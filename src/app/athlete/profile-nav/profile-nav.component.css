@@ -1,0 +1,55 @@
+.profile-nav {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.nav-item {
+    flex: 1;
+    text-align: center;
+    list-style: none;
+    border-bottom: 4px solid #000;
+}
+
+.nav > :nth-child(1){
+    border-right: 2px solid #000;
+}
+
+.nav > :nth-child(2) {
+    border-left: 2px solid #000;
+}
+
+.nav-item svg {
+    width: 2rem;
+    min-height: 1.7rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #000;
+    letter-spacing: 1px;
+}
+
+.nav-link:hover {
+    background-color: rgb(173, 251, 251);
+}
+
+.active > .nav-link { 
+    background-color: #000;
+    color: #fff;
+    transition: 100ms ease-in-out;
+}
+
+.active > .nav-link svg {
+    fill: #fff;
+}

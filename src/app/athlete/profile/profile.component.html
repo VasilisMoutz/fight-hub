@@ -1,0 +1,49 @@
+<div class="wrap">
+    <div class="profile-container">
+
+        <!-- ATHLETES MAIN INFORMATION -->
+        <div class="athelteInfo">
+            <div class="profile-header">
+                <div class="basic-info-container">
+                    <img class="athlete-photo" src="" alt="">
+                    <div class="info">
+                        <p class="athlete-name">{{profileInfo.name}}</p>
+                        <ul>
+                            <li>{{profileInfo.style}}</li>
+                            <li>{{profileInfo.gender}}</li>
+                            <li>{{profileInfo.weight}} kg</li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="category">
+                    <div class="category-content">
+                        <p class="title">Category</p>
+                        <p class="division">{{profileInfo.category}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- STATISTICS -->
+        <div class="stats">
+            <div class="wins">
+                <p class="wins-title">Win Rate</p>
+                <p class="win-rate">{{profileInfo.winRate}}%</p>
+            </div>
+            <div class="fights">
+                <p class="fights-title">Total Fights</p>
+                <p class="total-fights">{{profileInfo.totalFights}}</p>
+            </div>
+        </div>
+
+        <!-- PARTICIPATION DETAILS -->
+        <div class="details">
+            <app-profile-nav></app-profile-nav>
+            <div class="details-content">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,70 @@
+<nav class="navbar">
+    <ul class="navbar-nav">
+        <li class="logo">
+            <a routerLink="home" class="nav-link">
+                <span class="link-text">FightHub</span>
+                <svg
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fad"
+                data-icon="angle-double-right"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+                class="svg-inline--fa fa-angle-double-right fa-w-14 fa-5x"
+              >
+                <g class="fa-group">
+                  <path
+                    fill="currentColor"
+                    d="M224 273L88.37 409a23.78 23.78 0 0 1-33.8 0L32 386.36a23.94 23.94 0 0 1 0-33.89l96.13-96.37L32 159.73a23.94 23.94 0 0 1 0-33.89l22.44-22.79a23.78 23.78 0 0 1 33.8 0L223.88 239a23.94 23.94 0 0 1 .1 34z"
+                    class="fa-secondary"
+                  ></path>
+                  <path
+                    fill="currentColor"
+                    d="M415.89 273L280.34 409a23.77 23.77 0 0 1-33.79 0L224 386.26a23.94 23.94 0 0 1 0-33.89L320.11 256l-96-96.47a23.94 23.94 0 0 1 0-33.89l22.52-22.59a23.77 23.77 0 0 1 33.79 0L416 239a24 24 0 0 1-.11 34z"
+                    class="fa-primary"
+                  ></path>
+                </g>
+              </svg>
+            </a>
+        </li>
+        <li class="nav-item">
+          <a 
+            routerLink="explore" 
+            class="nav-link">
+              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm50.7-186.9L162.4 380.6c-19.4 7.5-38.5-11.6-31-31l55.5-144.3c3.3-8.5 9.9-15.1 18.4-18.4l144.3-55.5c19.4-7.5 38.5 11.6 31 31L325.1 306.7c-3.2 8.5-9.9 15.1-18.4 18.4zM288 256a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"/></svg>
+              <span class="link-text">Explore</span>
+          </a>
+      </li>
+        <li *ngIf="!authenticated" class="nav-item">
+            <a routerLink="login" class="nav-link">
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg>
+                <span class="link-text">Login</span>
+            </a>
+        </li>
+        <li *ngIf="authenticated" class="nav-item">
+          <a routerLink="profile" class="nav-link">
+              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg>
+              <span class="link-text">Profile</span>
+          </a>
+        </li>
+        <!-- <li *ngIf="authenticated" class="nav-item">
+          <a routerLink="login" class="nav-link">
+            <svg aria-hidden="true" data-prefix="fas" data-icon="boxing-glove" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="1em"><path d="M384 160h-31.1c-26.3 0-48.3 20.8-48.8 47.1-.5 24.6 17.6 45.1 41.1 48.4 4 .6 6.9 4.1 6.9 8.1v16c0 4.7-4.1 8.5-8.8 8-40-4.4-71.2-38.4-71.2-79.5 0-5.5.6-10.8 1.6-16H141.2c-30.6 0-59.5-10.9-82.3-30.8-3.5-3.1-3.7-8.4-.4-11.7l11.3-11.3c3-3 7.7-3.1 10.9-.4 16.9 14.4 38.1 22.3 60.5 22.3H288v.5c28.4-38.1 66.9-32.5 96-32.5V96c0-53-43-96-96-96H96C43.3 0 0 43.1 0 95.9c0 63.9 5.3 127.8 15.8 190.8L32 384h40c4.4 0 8 3.6 8 8v16c0 4.4-3.6 8-8 8H32v64c0 17.7 14.3 32 32 32h256c17.7 0 32-14.3 32-32v-64h-40c-4.4 0-8-3.6-8-8v-16c0-4.4 3.6-8 8-8h40l58.5-58.5C450.8 285.1 448 237.8 448 224c0-35.3-28.7-64-64-64zM260.8 441.6l-9.6 12.8c-2.6 3.5-7.7 4.3-11.2 1.6l-48-36-48 36c-3.5 2.7-8.6 1.9-11.2-1.6l-9.6-12.8c-2.6-3.5-1.9-8.5 1.6-11.2l40.5-30.4-40.5-30.4c-3.5-2.6-4.3-7.7-1.6-11.2l9.6-12.8c2.6-3.5 7.7-4.3 11.2-1.6l48 36 48-36c3.5-2.7 8.6-1.9 11.2 1.6l9.6 12.8c2.6 3.5 1.9 8.5-1.6 11.2L218.7 400l40.5 30.4c3.5 2.6 4.2 7.7 1.6 11.2z" class=""></path></svg>
+            <span class="link-text">My Fights</span>
+          </a>
+        </li>
+        <li *ngIf="authenticated" class="nav-item">
+          <a routerLink="login" class="nav-link">
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M4.1 38.2C1.4 34.2 0 29.4 0 24.6C0 11 11 0 24.6 0H133.9c11.2 0 21.7 5.9 27.4 15.5l68.5 114.1c-48.2 6.1-91.3 28.6-123.4 61.9L4.1 38.2zm503.7 0L405.6 191.5c-32.1-33.3-75.2-55.8-123.4-61.9L350.7 15.5C356.5 5.9 366.9 0 378.1 0H487.4C501 0 512 11 512 24.6c0 4.8-1.4 9.6-4.1 13.6zM80 336a176 176 0 1 1 352 0A176 176 0 1 1 80 336zm184.4-94.9c-3.4-7-13.3-7-16.8 0l-22.4 45.4c-1.4 2.8-4 4.7-7 5.1L168 298.9c-7.7 1.1-10.7 10.5-5.2 16l36.3 35.4c2.2 2.2 3.2 5.2 2.7 8.3l-8.6 49.9c-1.3 7.6 6.7 13.5 13.6 9.9l44.8-23.6c2.7-1.4 6-1.4 8.7 0l44.8 23.6c6.9 3.6 14.9-2.2 13.6-9.9l-8.6-49.9c-.5-3 .5-6.1 2.7-8.3l36.3-35.4c5.6-5.4 2.5-14.8-5.2-16l-50.1-7.3c-3-.4-5.7-2.4-7-5.1l-22.4-45.4z"/></svg>
+            <span class="link-text">Record</span>
+          </a>
+        </li> -->
+        <li *ngIf="authenticated" class="nav-item">
+          <a routerLink="login" class="nav-link" (click)="logout()">
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z"/></svg>
+              <span class="link-text">Logout</span>
+          </a>
+        </li>
+    </ul>
+</nav>

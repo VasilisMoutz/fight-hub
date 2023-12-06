@@ -1,0 +1,15 @@
+<div *ngIf="registerStatus" class="success">
+    <div class="message">
+        <p>Successful Register</p>
+        <button class="redirect successBtn" routerLink="/profile/fights">Check Your Profile</button>
+    </div>
+</div>
+
+<div *ngIf="!registerStatus" class="failure">
+    <div class="message">
+        <h1 class="oops">Oops!</h1>
+        <p>We could not register you to event.</p>
+        <p>Please check if you are already registered or try again later..</p>
+    </div>
+    <button class="redirect errorBtn" routerLink="/explore">Go to Upcoming Fights</button>
+</div>

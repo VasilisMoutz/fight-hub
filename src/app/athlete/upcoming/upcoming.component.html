@@ -1,0 +1,12 @@
+<div class="event-container" *ngIf="!upcomingEmpty">
+    <app-registered-event
+    *ngFor="let fight of registeredFights"
+    [fightEvent]="fight">
+
+    </app-registered-event>
+</div>
+
+<div class="callToAction" *ngIf="upcomingEmpty">
+    <app-call-to-action></app-call-to-action>
+</div>
+

@@ -1,0 +1,33 @@
+.container {
+    width: 80%;
+    margin: 3rem auto 0;
+    text-align: center;
+}
+
+svg {
+    min-width: 4rem;
+    height: auto;
+}
+
+h1 {
+    font-size: 1.3rem;
+}
+
+button {
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    background: rgb(4, 43, 54);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+button:hover {
+    background-color: rgb(20, 149, 185);
+    box-shadow: 0 3px 10px rgb(95, 95, 95);
+    transition: .2s ease-in-out;
+}

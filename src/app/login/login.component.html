@@ -1,0 +1,53 @@
+<div class="wrap">
+    <div class="login-container">
+        <h1>Login</h1>
+        <form [formGroup]="form" (submit)="submit()">
+            <div class="input-wrap">
+    
+                <!-- EMAIL -->
+                <div class="input-box">
+                    <input formControlName="email" type="email" required>
+                    <!-- Floating Label Animation -->
+                    <label [ngClass]="{'active': form.get('email')?.value}">Email</label>
+                    <!-- Display Email requirements -->
+                    <div class="field-message" *ngIf="form.get('email')?.hasError('required') && form.get('email')?.touched">
+                        Email is required
+                    </div>
+                    <div class="field-message" *ngIf="form.get('email')?.hasError('email') && form.get('email')?.touched">
+                        Please insert a valid email address
+                    </div>
+                </div>
+    
+                <!-- PASSWORD -->
+                <div class="input-box">
+                    <input formControlName="password" type="password" required>
+                    <!-- Floating Label Animation -->
+                    <label [ngClass]="{'active': form.get('password')?.value}">Password</label>
+                    <!-- Display password requirements  -->
+                    <div class="field-message" *ngIf="form.get('password')?.hasError('passwordStrength') && form.get('password')?.touched">
+                        Password must be at least 8 characters long, and must have lower case, upper case and numeric characters.
+                    </div>
+                </div>
+                
+                <button type="submit">Login</button>
+                <p class="register">or <a routerLink="/register">create an account</a></p>
+            </div>
+        </form>
+    </div>
+    <!-- Notify for Invalid credential format -->
+    <div #scrollTarget *ngIf="formInvalid" class="form-invalid-warning">
+        Insufficient login information. Please provide valid username and password.
+    </div>
+
+    <!-- Notify for Server side Error -->
+    <div #scrollTarget *ngIf="loginError" class="form-invalid-warning">
+        An error occured during authentication. Please check your email and password, or try again later
+    </div>
+    
+</div>
+
+
+
+
+
+

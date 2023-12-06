@@ -1,0 +1,15 @@
+<section class="listing">
+    <img class="listing-photo" [src]="fightEvent.photo"
+    alt="Event photo of {{ fightEvent.name }}">
+    <div class="event-info">
+        <h2 class="listing-heading">{{ fightEvent.name }}</h2>
+        <p class="date">
+            {{ fightEvent.date | date }}
+        </p>
+        <p class="listing-location">
+            {{ fightEvent.location.city }},
+            {{ fightEvent.location.district }}
+        </p>
+        <a [routerLink]="['/details', fightEvent.id]">Learn More</a>
+    </div>
+</section>

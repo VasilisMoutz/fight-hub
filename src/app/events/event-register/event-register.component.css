@@ -1,0 +1,99 @@
+
+.event-pic{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: fixed; /* Fix the image position */
+    top: 0;
+    left: 0;
+    filter: brightness(20%);
+    /* filter: blur(2px) */
+}
+
+.card-content {
+    margin: 2rem;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+/* ------ EVENT CARD ------*/
+.event-info {
+    position: relative;
+    top: 20%;
+    left: 5%;
+    width: 50%;
+}
+
+.event-info p {
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.event-title {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 3.5rem;
+}
+
+/* ----- ATHLETE CARD ------ */
+
+.athlete-info {
+    padding: 2rem;
+    position: absolute;
+    right: 10%;
+    top: 30%;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 7px;
+}
+
+.athlete-info p {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+
+.icon svg{
+    fill: #fff;
+    width: 1.5rem;
+    height: auto;
+    padding-right: 0.9rem;
+}
+
+.callToAction {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 2rem;
+}
+
+.athlete-name {
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+.register-button {
+    width: 100%;
+    border: none;
+    border: 1px solid #fff;
+    border-radius: 7px;
+    background-color: transparent;
+
+    color: #fff;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    padding: 0.5rem 0;
+    margin: 1rem 0;
+
+    cursor: pointer;
+    transition: 200ms ease-in-out;
+}
+
+.register-button:hover {
+    background-color: #fff;
+    color: black;
+    transition: 200ms ease-in-out;
+}
+
