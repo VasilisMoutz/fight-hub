@@ -1,7 +1,8 @@
 .profile-nav {
     width: 100%;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: var(--profile-bg);
+    border: none;
 }
 
 .nav {
@@ -14,42 +15,57 @@
     flex: 1;
     text-align: center;
     list-style: none;
-    border-bottom: 4px solid #000;
 }
 
-.nav > :nth-child(1){
-    border-right: 2px solid #000;
-}
-
-.nav > :nth-child(2) {
-    border-left: 2px solid #000;
-}
 
 .nav-item svg {
     width: 2rem;
     min-height: 1.7rem;
+    fill: #fff;
 }
 
 .nav-link {
+    position: relative;
+    bottom: -3px;
     text-decoration: none;
     padding: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #000;
+    background-color: #022b3b;
+    /* border-top: 3px solid #09698f; */
+    color: #fff;
     letter-spacing: 1px;
+    transition: var(--transition-fast) ease-in-out;
+}
+
+.record-link {
+    border-radius: 0 10px 0 0;
+}
+
+.upcoming-link {
+    border-radius: 10px 0 0 0;
 }
 
 .nav-link:hover {
-    background-color: rgb(173, 251, 251);
+    transition: var(--transition-fast) ease-in-out;
+    background-color: #0379a7;
 }
 
 .active > .nav-link { 
-    background-color: #000;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
     transition: 100ms ease-in-out;
+    border-radius: 0;
+    border: 2px solid #fff;
 }
 
 .active > .nav-link svg {
-    fill: #fff;
+    fill: #000;
+}
+
+@media only screen and (max-width: 800px) {
+    .link-text {
+        display: none;
+    }
 }
