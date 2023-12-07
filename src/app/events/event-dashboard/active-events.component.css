@@ -38,3 +38,10 @@ form button[type="submit"] {
 form button[type="submit"]:hover {
     background-color: #2f2f3e;
 }
+
+@media only screen and (max-width: 600px) {
+    .events-header {
+        width: 90%;
+        margin: 0 auto;
+    }
+}

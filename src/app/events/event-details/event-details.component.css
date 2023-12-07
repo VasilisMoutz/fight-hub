@@ -45,7 +45,8 @@
 
 @media only screen and (max-width: 600px) {
     .listing{
-        width: 270px;
+        width: 95%;
+        margin: 2rem auto;
     }
 
     .listing-heading {
