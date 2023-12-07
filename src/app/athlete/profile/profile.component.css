@@ -201,7 +201,8 @@
 
 @media only screen and (max-width: 800px) {
     .profile-container {
-        padding: 2.5rem 0;
+        /* 8rem because: 5rem is the buttom nav + 2rem for space*/
+        padding: 2.5rem 0 8rem;
     }
 
     .profile-header {
