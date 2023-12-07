@@ -1,10 +1,13 @@
-<h1>Upcoming Events</h1>
-<form>
-    <input type="text" placeholder="Search" #filter>
-    <button type="submit"
-    (click) = "filterResults(filter.value)"
-    >Search</button>
-</form>
+<div class="events-header">
+    <h1>Upcoming Events</h1>
+    <form>
+        <input type="text" placeholder="Search" #filter>
+        <button type="submit"
+        (click) = "filterResults(filter.value)"
+        >Search</button>
+    </form>
+</div>
+
 <div *ngIf="response" class="event-container">
     <app-event-details
         *ngFor="let event of filteredEventList"
