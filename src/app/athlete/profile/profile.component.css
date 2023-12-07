@@ -1,5 +1,5 @@
 .wrap {
-    background-color: rgb(10, 73, 93);
+    background-color: var(--profile-bg);
     height: 100%;
 }
 
@@ -13,11 +13,11 @@
 .profile-header {
     background-color: white;
     position: relative;
-    color: black;
     width: 80%;
     max-width: 1200px;
     display: flex;
     justify-content: space-between;
+    border-radius: 0 5px 5px 0;
 }
 
 .basic-info-container {
@@ -37,6 +37,7 @@
 .info {
     padding-left: 2rem;
     letter-spacing: 2px;
+    color: var(--profile-text);
 }
 
 .info ul{
@@ -60,6 +61,7 @@
     margin-top: -15px;
     margin-right: 30px;
     text-transform: uppercase;
+    color: var(--profile-text);
 }
 
 .category .title {
@@ -70,10 +72,17 @@
 .category .division {
     margin: 0.5em 0;
     padding: 0.5rem;
-    background: linear-gradient(90deg, #014f61, #fff);
-    /* background-color: black; */
+    background: linear-gradient(90deg, #014f61, #e46c6c);
     letter-spacing: 1.5px;
+    border-radius: 5px;
     color: white;
+}
+
+.icon svg {
+    width: 1.5rem;
+    height: auto;
+    fill: #143035;
+    margin-right: 0.8rem;
 }
 
 /* -------- FIGHTER STATS ----------*/
@@ -81,14 +90,13 @@
 .stats {
     color: #fff;
     display: flex;
-    width: 50%;
-    justify-content: space-around;
+    width: 80%;
+    justify-content: center;
     margin: 2rem auto;
 }
 
 .wins, .fights {
     text-align: center;
-    flex: 1;
 }
 
 .wins-title, .fights-title {
@@ -119,43 +127,52 @@
     max-width: 1700px;
     height: auto;
     margin: 0 auto;
-    background-color: #fff
+    background-color: #fff;
 }
 
 .details-content{
     min-height: 300px;
 }
 
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 1090px) {
+
+    .profile-container {
+        padding: 5rem 0;
+    }
+
     .basic-info-container {
         flex-direction: column;
+        margin: 0;
+    }
+
+    .profile-header {
+        justify-content: space-around;
+        width: 90%;
     }
 
     .info .athlete-name {
-        color: #000;
-        margin: 0.3rem 0;
-        font-size: 1.8rem;
+        color: var(--profile-text);
+        margin: 2rem 0;
     }
 
     .athlete-photo {
-        top: -15%;
-        width: 120px;
-        height: 120px;
-    }
-
-    .info {
-        margin-top: -15%;
+        display: none;
     }
 
     .info ul li{
         padding: 0;
     }
 
+    .category {
+        margin: 0;
+        /* margin-right: 3rem; */
+    }
+
     .category-content {
-        height: 90%;
+        height: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
+        justify-content: center;
     }
 
     .category .title {
@@ -163,5 +180,49 @@
         font-size: 2rem;
     }
 
+    /* Statistics */
+    .wins-title, .fights-title {
+        font-size: 1.4rem;
+    }
+
+    .wins, .fights {
+        flex: 1;
+    }
+
+    .win-rate, .total-fights {
+        font-size: 3rem;
+    }
+
+    .details {
+        width: 90%;
+    }
+
 }
 
+@media only screen and (max-width: 800px) {
+    .profile-container {
+        padding: 2.5rem 0;
+    }
+
+    .profile-header {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 2rem;
+        border-radius: 0;
+    }
+
+    .category .title {
+        display: none;
+    }
+
+    .info ul li {
+        margin-top: 1.3rem;
+    }
+
+    .category {
+        width: 80%;
+        text-align: center;
+    }
+}

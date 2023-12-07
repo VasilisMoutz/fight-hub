@@ -1,8 +1,32 @@
 .event-info {
-    background-color: rgb(4, 43, 54);
+    background-color: #01394f;
     color: white;
     padding: 1rem 2rem;
     margin: 1rem;
-    min-width: 450px;
-    max-width: 750px;
+    min-width: 500px;
+    max-width: 650px;
+    border-radius: 10px;
+    letter-spacing: 1px;
+}
+
+
+@media only screen and (max-width: 1090px) {
+
+    .event-info {
+        margin: 1rem auto;
+    }
+
+    .event-heading {
+        font-size: 1.2rem;
+    }
+
+    .event-info p {
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .event-info {
+        min-width: min-content;
+    }
 }

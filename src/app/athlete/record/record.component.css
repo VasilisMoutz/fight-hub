@@ -6,8 +6,9 @@ table {
 }
 
 thead {
-    background-color: black;
-    color: white;
+    background-color: rgb(142, 219, 226);
+    color: #000000;
+    letter-spacing: 3px;
 }
 
 th {
@@ -19,4 +20,30 @@ th {
 td {
     padding: 1.5rem;
     font-size: 1.1rem;
+}
+
+@media only screen and (max-width: 1090px) {
+    thead {
+        letter-spacing: normal;
+    }
+
+    th {
+        font-size: 1rem;
+    }
+
+    td {
+        padding: 1.2rem;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+
+    .mobile-hide {
+        display: none;
+    }
+
+    /* td {
+        font-size: 0.9rem;
+    } */
 }

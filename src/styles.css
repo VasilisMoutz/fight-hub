@@ -6,8 +6,10 @@
     --text-secondary: #ececec;
     --bg-primary: #141e30;
     --bg-secondary: #0b1426;
+    --profile-bg: rgb(10, 73, 93);
+    --profile-text: #143035;
     --transition-speed: 400ms;
-
+    --transition-fast: 200ms;
     --forms-action: #03e9f4;
 }
 
