@@ -43,7 +43,7 @@
                 Your journey doesn't end in the ring—it's just the beginning. Access personalized fight data, performance analytics, and insights that elevate your skills. Unleash the warrior within as you analyze, strategize, and fine-tune your techniques with precision.
             </p>
         </section>
-        <div class="callToAction">
+        <div *ngIf="!isLoggedIn" class="callToAction">
             <p>Ready to embark on your fighting journey?</p>
             <div class="buttons">
                 <button routerLink="/login">Login</button>

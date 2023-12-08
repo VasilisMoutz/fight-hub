@@ -1,11 +1,66 @@
 <div class="wrap">
-    <div class="athelte-welcome">
+    <div class="athlete-actions">
         <h1>Hi {{user}}</h1>
         <div class="user-actions">
-            <button>Access Your Profile</button>
-            <button>Enter the Arena</button>
+            <button routerLink="/profile">Profile</button>
+            <button routerLink="/explore">Enter the Arena</button>
+        </div>
+    </div>
+    <div class="about-wrap">
+        <!-- content shown to non-logged in users -->
+        <div class="about">
+            <section class="home-section">
+                <h2 class="section-title">
+                    <span class="fire">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M159.3 5.4c7.8-7.3 19.9-7.2 27.7 .1c27.6 25.9 53.5 53.8 77.7 84c11-14.4 23.5-30.1 37-42.9c7.9-7.4 20.1-7.4 28 .1c34.6 33 63.9 76.6 84.5 118c20.3 40.8 33.8 82.5 33.8 111.9C448 404.2 348.2 512 224 512C98.4 512 0 404.1 0 276.5c0-38.4 17.8-85.3 45.4-131.7C73.3 97.7 112.7 48.6 159.3 5.4zM225.7 416c25.3 0 47.7-7 68.8-21c42.1-29.4 53.4-88.2 28.1-134.4c-4.5-9-16-9.6-22.5-2l-25.2 29.3c-6.6 7.6-18.5 7.4-24.7-.5c-16.5-21-46-58.5-62.8-79.8c-6.3-8-18.3-8.1-24.7-.1c-33.8 42.5-50.8 69.3-50.8 99.4C112 375.4 162.6 416 225.7 416z"/></svg>
+                    </span>
+                    This is FightHub - Where Warriors Unite!
+                    <span class="fire">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M159.3 5.4c7.8-7.3 19.9-7.2 27.7 .1c27.6 25.9 53.5 53.8 77.7 84c11-14.4 23.5-30.1 37-42.9c7.9-7.4 20.1-7.4 28 .1c34.6 33 63.9 76.6 84.5 118c20.3 40.8 33.8 82.5 33.8 111.9C448 404.2 348.2 512 224 512C98.4 512 0 404.1 0 276.5c0-38.4 17.8-85.3 45.4-131.7C73.3 97.7 112.7 48.6 159.3 5.4zM225.7 416c25.3 0 47.7-7 68.8-21c42.1-29.4 53.4-88.2 28.1-134.4c-4.5-9-16-9.6-22.5-2l-25.2 29.3c-6.6 7.6-18.5 7.4-24.7-.5c-16.5-21-46-58.5-62.8-79.8c-6.3-8-18.3-8.1-24.7-.1c-33.8 42.5-50.8 69.3-50.8 99.4C112 375.4 162.6 416 225.7 416z"/></svg>
+                    </span>
+                </h2>
+                <p>
+                    Embark on a journey where the thrill of battle meets cutting-edge technology. FightHub is not just an app; it's your passport to the heart of combat sports! Whether you're a seasoned warrior or just beginning your odyssey, this is the ultimate hub for fighters seeking glory.
+                </p>
+            </section>
+            <section class="home-section">
+                <h2 class="section-title">
+                    <span class="glove">
+                        <svg aria-hidden="true" data-prefix="fas" data-icon="boxing-glove" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="1em"><path d="M384 160h-31.1c-26.3 0-48.3 20.8-48.8 47.1-.5 24.6 17.6 45.1 41.1 48.4 4 .6 6.9 4.1 6.9 8.1v16c0 4.7-4.1 8.5-8.8 8-40-4.4-71.2-38.4-71.2-79.5 0-5.5.6-10.8 1.6-16H141.2c-30.6 0-59.5-10.9-82.3-30.8-3.5-3.1-3.7-8.4-.4-11.7l11.3-11.3c3-3 7.7-3.1 10.9-.4 16.9 14.4 38.1 22.3 60.5 22.3H288v.5c28.4-38.1 66.9-32.5 96-32.5V96c0-53-43-96-96-96H96C43.3 0 0 43.1 0 95.9c0 63.9 5.3 127.8 15.8 190.8L32 384h40c4.4 0 8 3.6 8 8v16c0 4.4-3.6 8-8 8H32v64c0 17.7 14.3 32 32 32h256c17.7 0 32-14.3 32-32v-64h-40c-4.4 0-8-3.6-8-8v-16c0-4.4 3.6-8 8-8h40l58.5-58.5C450.8 285.1 448 237.8 448 224c0-35.3-28.7-64-64-64zM260.8 441.6l-9.6 12.8c-2.6 3.5-7.7 4.3-11.2 1.6l-48-36-48 36c-3.5 2.7-8.6 1.9-11.2-1.6l-9.6-12.8c-2.6-3.5-1.9-8.5 1.6-11.2l40.5-30.4-40.5-30.4c-3.5-2.6-4.3-7.7-1.6-11.2l9.6-12.8c2.6-3.5 7.7-4.3 11.2-1.6l48 36 48-36c3.5-2.7 8.6-1.9 11.2 1.6l9.6 12.8c2.6 3.5 1.9 8.5-1.6 11.2L218.7 400l40.5 30.4c3.5 2.6 4.2 7.7 1.6 11.2z" class=""></path></svg>
+                    </span>
+                    Discover, Engage, Conquer - Your Fight Awaits! 
+                    <span class="bolt">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M349.4 44.6c5.9-13.7 1.5-29.7-10.6-38.5s-28.6-8-39.9 1.8l-256 224c-10 8.8-13.6 22.9-8.9 35.3S50.7 288 64 288H175.5L98.6 467.4c-5.9 13.7-1.5 29.7 10.6 38.5s28.6 8 39.9-1.8l256-224c10-8.8 13.6-22.9 8.9-35.3s-16.6-20.7-30-20.7H272.5L349.4 44.6z"/></svg>
+                    </span>
+                </h2>
+                <p>
+                    Dive into a world where every punch, kick, and submission matters. FightHub is your gateway to an extensive array of fight events happening around the globe. From adrenaline-pumping championships to local showdowns, find the stage that suits your style, and declare your presence.
+                </p>
+            </section>
+            <section class="home-section">
+                <h2 class="section-title">
+                    <span class="database">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M448 80v48c0 44.2-100.3 80-224 80S0 172.2 0 128V80C0 35.8 100.3 0 224 0S448 35.8 448 80zM393.2 214.7c20.8-7.4 39.9-16.9 54.8-28.6V288c0 44.2-100.3 80-224 80S0 332.2 0 288V186.1c14.9 11.8 34 21.2 54.8 28.6C99.7 230.7 159.5 240 224 240s124.3-9.3 169.2-25.3zM0 346.1c14.9 11.8 34 21.2 54.8 28.6C99.7 390.7 159.5 400 224 400s124.3-9.3 169.2-25.3c20.8-7.4 39.9-16.9 54.8-28.6V432c0 44.2-100.3 80-224 80S0 476.2 0 432V346.1z"/></svg>
+                    </span>
+                    Dive into Personalized Battle Data 
+                    <span class="chart">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M160 80c0-26.5 21.5-48 48-48h32c26.5 0 48 21.5 48 48V432c0 26.5-21.5 48-48 48H208c-26.5 0-48-21.5-48-48V80zM0 272c0-26.5 21.5-48 48-48H80c26.5 0 48 21.5 48 48V432c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V272zM368 96h32c26.5 0 48 21.5 48 48V432c0 26.5-21.5 48-48 48H368c-26.5 0-48-21.5-48-48V144c0-26.5 21.5-48 48-48z"/></svg>
+                    </span>
+                </h2>
+                <p>
+                    Your journey doesn't end in the ring—it's just the beginning. Access personalized fight data, performance analytics, and insights that elevate your skills. Unleash the warrior within as you analyze, strategize, and fine-tune your techniques with precision.
+                </p>
+            </section>
+            <div *ngIf="!login" class="callToAction">
+                <p>Ready to embark on your fighting journey?</p>
+                <div class="buttons">
+                    <button routerLink="/login">Login</button>
+                    <button routerLink="/register">SignUp</button>
+                </div>
+            </div>
         </div>
     </div>
 </div>
+
 
 

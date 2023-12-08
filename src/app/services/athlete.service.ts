@@ -12,7 +12,7 @@ export class AthleteService {
 
   constructor(private http: HttpClient) { }
 
-  // private readonly athleteUrll = 'http://localhost:5000/api/athletes/';
+  private readonly athleteUrll = 'http://localhost:5000/api/athletes/';
   private readonly athleteUrl = 'https://fight-hub-5a75f6d0e989.herokuapp.com/api/athletes/'
 
   // Register new athlete

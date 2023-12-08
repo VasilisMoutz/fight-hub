@@ -76,7 +76,7 @@ export class LoginComponent implements OnInit, AfterViewChecked{
     this.athleteService.loginAthlete(this.form.getRawValue())
       .subscribe({
         // Successfull Login redirect to home
-        next: () => this.router.navigate(['/']),
+        next: () => this.router.navigate(['/home']),
         // Notify Server side error
         error: (error) => {
           this.loginError = true

@@ -14,6 +14,7 @@ export class HomeComponent implements OnInit {
     private athleteService: AthleteService,
     private router: Router
     ){}
+
   login = false;
   user = '';
 

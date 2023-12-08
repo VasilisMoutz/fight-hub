@@ -4,6 +4,7 @@
 
 .listing {
     width: 400px;
+    min-width: 345px;
     min-height: 500px;
     margin: 2rem;
     border-radius: 30px;
@@ -45,7 +46,7 @@
 
 @media only screen and (max-width: 600px) {
     .listing{
-        width: 95%;
+        width: 92%;
         margin: 2rem auto;
     }
 
