@@ -13,6 +13,7 @@ export class FightEventsService {
   constructor(private http: HttpClient) { }
 
   private readonly eventUrl: string = ' https://fight-hub-5a75f6d0e989.herokuapp.com/api/events'
+  private readonly eventUrll: string = 'http://localhost:5000/api/events'
 
   // Fetch all Events
   getAllFightEvents(): Observable<any> {

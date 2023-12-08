@@ -1,5 +1,5 @@
 .failure, .success{
-    width: 30%;
+    max-width: 470px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -58,4 +58,35 @@
 
 .redirect:hover {
     transition: 200ms ease-in-out;
+}
+
+@media only screen and (max-width: 800px) {
+    .failure, .success {
+        width: 50%;
+        left: 55%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .failure, .success {
+        width: 70%;
+        left: 50%;
+    }
+
+    .success p {
+        font-size: 1.2rem;
+    }
+
+    .failure p {
+        font-size: 1rem;
+    }
+    
+    .oops {
+        font-size: 1.9rem;
+    }
+
+    .redirect {
+        font-size: 1rem;
+    }
+    
 }
