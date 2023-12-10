@@ -27,6 +27,7 @@ export class RecordComponent implements OnInit{
 
   ngOnInit(): void {
 
+    // Fetch athlete data and event's data
     combineLatest([this.athleteService.authAthelte(), this.eventService.getAllFightEvents()])
       .subscribe(
         ([athlete, events]) => {
@@ -51,7 +52,6 @@ export class RecordComponent implements OnInit{
     }
 
     
-
     // Itterate through record ( all past fights )
     for (const key in record) {
 

@@ -71,6 +71,9 @@
     transform: rotate(-180deg);
 }
 
+.mobile-nav-item {
+    display: none;
+}
 
 /* Small screens */
 @media only screen and (max-width: 600px) {
@@ -91,6 +94,8 @@
     .nav-link {
         justify-content: center;
     }
+
+    .mobile-nav-item {display: list-item;}
 }
 
 /* Large screens */
