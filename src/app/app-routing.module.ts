@@ -11,11 +11,9 @@ import { RecordComponent } from './athlete/record/record.component';
 import { UpcomingComponent } from './athlete/upcoming/upcoming.component';
 import { EventRegisterComponent } from './events/event-register/event-register.component';
 import { RegisterStatusComponent } from './athlete/register-status/register-status.component';
-import { WelcomeComponent } from './athlete/welcome/welcome.component';
 
 const routes: Routes = [
   {path:"home", component: HomeComponent},
-  {path:"welcome", component: WelcomeComponent},
   {path: "explore", component: ActiveEventsComponent},
   {path: "details/:id", component: EventRegisterComponent, canActivate: [canActivate]},
   {path: "register-status/:status", component: RegisterStatusComponent},

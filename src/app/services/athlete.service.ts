@@ -1,9 +1,9 @@
 import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
+import { EnvironmentInjector, Injectable } from '@angular/core';
 import { Observable, map } from 'rxjs';
 import { Athlete } from '../interface/athlete-interfaces/athlete';
 import { SingleResponse } from '../interface/response-interfaces/singleResponse';
-
+import { api } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -12,8 +12,7 @@ export class AthleteService {
 
   constructor(private http: HttpClient) { }
 
-  private readonly localAthleteUrl = 'http://localhost:5000/api/athletes/';
-  private readonly athleteUrl = 'https://fight-hub-5a75f6d0e989.herokuapp.com/api/athletes/'
+  private readonly athleteUrl: string = api.url + 'api/athletes/'
 
   // Register new athlete
   registerNewAthlete(athlete: Athlete): Observable<any> {

@@ -4,6 +4,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable, map } from 'rxjs';
 import { ArrayResponse } from '../interface/response-interfaces/arrayResponse';
 import { SingleResponse } from '../interface/response-interfaces/singleResponse';
+import { api } from '../../environments/environment'
 
 @Injectable({
   providedIn: 'root'
@@ -12,8 +13,7 @@ export class FightEventsService {
 
   constructor(private http: HttpClient) { }
 
-  private readonly eventUrl: string = ' https://fight-hub-5a75f6d0e989.herokuapp.com/api/events'
-  private readonly eventUrll: string = 'http://localhost:5000/api/events'
+  private readonly eventUrl: string = api.url + 'api/events'
 
   // Fetch all Events
   getAllFightEvents(): Observable<any> {

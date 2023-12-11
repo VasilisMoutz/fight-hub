@@ -28,7 +28,6 @@ export class HomeComponent implements OnInit {
       error: (err) => {
         this.login = false;
         Emitters.authEmitter.emit(false);
-        this.router.navigate(['/welcome'])
       }
     })
   }
