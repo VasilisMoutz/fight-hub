@@ -13,6 +13,12 @@ FightHub Platform provides a comprehensive solution for combat sports enthusiast
 - **Feature A:** Implementing the Promoters version of the application.
 - **Feature B:** Adding the ability for athletes to search for possible opponents.
 
+## Live Demo
+
+👉 Check out the live demo to explore the features in action! 👈
+
+**[LIVE DEMO](https://vasilismoutz.github.io/fight-hub-frontend/)**
+
 ## Key Features
 
 - **User-friendly Profiles:**
