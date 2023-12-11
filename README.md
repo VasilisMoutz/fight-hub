@@ -6,6 +6,13 @@ An application intented to act as a bridge between combat sport athletes and tou
 
 FightHub Platform provides a comprehensive solution for combat sports enthusiasts, offering features tailored to meet the unique needs of athletes.
 
+## Project Status
+🚧 **Work in Progress** 🚧
+
+### Current Work
+- **Feature A:** Implementing the Promoters version of the application.
+- **Feature B:** Adding the ability for athletes to search for possible opponents.
+
 ## Key Features
 
 - **User-friendly Profiles:**
@@ -63,9 +70,9 @@ Once you have installed the prerequisites, follow these steps to set up your dev
 
   - Set up and run the backend on your local machine by following the instructions provided in the backend repository.
 
-  - **Navigate to the `src/environments` directory.**
+  - Navigate to the `src/environments` directory.
 
-  - **Open the `environment.ts` file.**
+  - Open the `environment.ts` file.
     
   - Update the `api` configuration to point to your desired server URL:
 
@@ -116,4 +123,3 @@ For complete user experience logging in is required. You are welcome to create y
   - `/profile`
     - `/profile/record`
     - `/profile/fights`
-
