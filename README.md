@@ -45,7 +45,7 @@ Before you begin working with this Angular project, ensure that you have the fol
      ```bash
      ng --version
      ```
-## Installation
+## Setup
 Once you have installed the prerequisites, follow these steps to set up your development environment:
 1. **Clone this repository to your local machine:**
    ```bash
@@ -54,6 +54,24 @@ Once you have installed the prerequisites, follow these steps to set up your dev
 2. **Navigate to the project directory:**
    ```bash
    cd fight-hub-frontend
+
+3. **Optional: Customize Environment Variables**
+
+   If you prefer using your own backend server instead of the default live backend, you can easily modify the project's environment variables:
+
+  - **Navigate to the `src/environments` directory.**
+
+  - **Open the `environment.ts` file.**
+    
+  - Update the `api` configuration to point to your desired server URL:
+
+    ```typescript
+    export const environment = {
+      production: false,
+      api: {
+        url: 'http://localhost:8000/', // Your custom server URL
+      },
+    };
 
 3. **Install project dependencies:**
    ```bash
