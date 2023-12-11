@@ -1,5 +1,5 @@
 <div class="wrap">
-    <div class="athlete-actions">
+    <div *ngIf="login" class="athlete-actions">
         <h1>Hi {{user}}</h1>
         <div class="action-buttons">
             <button routerLink="/profile">
