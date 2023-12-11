@@ -19,6 +19,9 @@ FightHub Platform provides a comprehensive solution for combat sports enthusiast
 
 **[LIVE DEMO](https://vasilismoutz.github.io/fight-hub-frontend/)**
 
+For a quick start, you can use the following account:
+[Dummy Credentials](#usage)
+
 ## Key Features
 
 - **User-friendly Profiles:**
@@ -99,7 +102,6 @@ Once you have installed the prerequisites, follow these steps to set up your dev
    ng serve
 
 ## Usage
-
 For complete user experience logging in is required. You are welcome to create your own account. Alternatively, you can use the following dummy account details:
 
 - **Email:** test@gmail.com
