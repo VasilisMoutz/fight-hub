@@ -6,6 +6,22 @@ An application intented to act as a bridge between combat sport athletes and tou
 
 FightHub Platform provides a comprehensive solution for combat sports enthusiasts, offering features tailored to meet the unique needs of athletes.
 
+## Project Status
+🚧 **Work in Progress** 🚧
+
+### Current Work
+- **Feature A:** Implementing the Promoters version of the application.
+- **Feature B:** Adding the ability for athletes to search for possible opponents.
+
+## Live Demo
+
+👉 Check out the live demo to explore the features in action! 👈
+
+**[LIVE DEMO](https://vasilismoutz.github.io/fight-hub-frontend/)**
+
+For a quick start, you can use the following account:
+[Dummy Credentials](#usage)
+
 ## Key Features
 
 - **User-friendly Profiles:**
@@ -45,15 +61,37 @@ Before you begin working with this Angular project, ensure that you have the fol
      ```bash
      ng --version
      ```
-## Installation
+## Setup
 Once you have installed the prerequisites, follow these steps to set up your development environment:
 1. **Clone this repository to your local machine:**
    ```bash
-   git clone https://github.com/your-username/combat-sports-platform.git
+   git clone https://github.com/VasilisMoutz/fight-hub-frontend.git
    
 2. **Navigate to the project directory:**
    ```bash
    cd fight-hub-frontend
+
+3. **Optional: Backend configuration**
+
+   The application is currently connected to a deployed backend. If you wish to use the backend locally, follow these steps:
+
+  - Find the backend source code at [FightHub Backend](https://github.com/VasilisMoutz/fight-hub-backend).
+
+  - Set up and run the backend on your local machine by following the instructions provided in the backend repository.
+
+  - Navigate to the `src/environments` directory.
+
+  - Open the `environment.ts` file.
+    
+  - Update the `api` configuration to point to your desired server URL:
+
+    ```typescript
+    export const environment = {
+      production: false,
+      api: {
+        url: 'http://localhost:5000/', // Your custom server URL
+      },
+    };
 
 3. **Install project dependencies:**
    ```bash
@@ -62,3 +100,34 @@ Once you have installed the prerequisites, follow these steps to set up your dev
 4. **Start the development server:**
    ```bash
    ng serve
+
+## Usage
+For complete user experience logging in is required. You are welcome to create your own account. Alternatively, you can use the following dummy account details:
+
+- **Email:** test@gmail.com
+- **Password:** abcABC1!
+
+## Routes
+
+- **Home:**
+  - `/home`
+
+- **New Events:**
+  - `/explore`
+
+- **Event Details:**
+  - `/details/:id`
+
+- **Event Registration Status:**
+  - `/register-status/:status`
+
+- **Login:**
+  - `/login`
+
+- **User Registration:**
+  - `/register`
+
+- **User Profile:**
+  - `/profile`
+    - `/profile/record`
+    - `/profile/fights`
