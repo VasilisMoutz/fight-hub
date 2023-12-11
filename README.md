@@ -49,15 +49,19 @@ Before you begin working with this Angular project, ensure that you have the fol
 Once you have installed the prerequisites, follow these steps to set up your development environment:
 1. **Clone this repository to your local machine:**
    ```bash
-   git clone https://github.com/your-username/combat-sports-platform.git
+   git clone https://github.com/VasilisMoutz/fight-hub-frontend.git
    
 2. **Navigate to the project directory:**
    ```bash
    cd fight-hub-frontend
 
-3. **Optional: Customize Environment Variables**
+3. **Optional: Backend configuration**
 
-   If you prefer using your own backend server instead of the default live backend, you can easily modify the project's environment variables:
+   The application is currently connected to a deployed backend. If you wish to use the backend locally, follow these steps:
+
+  - Find the backend source code at [FightHub Backend](https://github.com/VasilisMoutz/fight-hub-backend).
+
+  - Set up and run the backend on your local machine by following the instructions provided in the backend repository.
 
   - **Navigate to the `src/environments` directory.**
 
@@ -69,7 +73,7 @@ Once you have installed the prerequisites, follow these steps to set up your dev
     export const environment = {
       production: false,
       api: {
-        url: 'http://localhost:8000/', // Your custom server URL
+        url: 'http://localhost:5000/', // Your custom server URL
       },
     };
 
@@ -80,3 +84,36 @@ Once you have installed the prerequisites, follow these steps to set up your dev
 4. **Start the development server:**
    ```bash
    ng serve
+
+## Usage
+
+For complete user experience logging in is required. You are welcome to create your own account. Alternatively, you can use the following dummy account details:
+
+- **Email:** test@gmail.com
+- **Password:** abcABC1!
+
+## Routes
+
+- **Home:**
+  - `/home`
+
+- **New Events:**
+  - `/explore`
+
+- **Event Details:**
+  - `/details/:id`
+
+- **Event Registration Status:**
+  - `/register-status/:status`
+
+- **Login:**
+  - `/login`
+
+- **User Registration:**
+  - `/register`
+
+- **User Profile:**
+  - `/profile`
+    - `/profile/record`
+    - `/profile/fights`
+
