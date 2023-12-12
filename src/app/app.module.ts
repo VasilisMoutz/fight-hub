@@ -21,7 +21,6 @@ import { ProfileNavComponent } from './athlete/profile-nav/profile-nav.component
 import { RegisteredEventComponent } from './athlete/registered-event/registered-event.component';
 import { CallToActionComponent } from './athlete/call-to-action/call-to-action.component';
 import { RegisterStatusComponent } from './athlete/register-status/register-status.component';
-import { WelcomeComponent } from './athlete/welcome/welcome.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +40,6 @@ import { WelcomeComponent } from './athlete/welcome/welcome.component';
     RegisteredEventComponent,
     CallToActionComponent,
     RegisterStatusComponent,
-    WelcomeComponent
   ],
   imports: [
     BrowserModule,

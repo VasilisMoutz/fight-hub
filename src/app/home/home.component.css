@@ -1,7 +1,7 @@
 .wrap {
     width: 100%;
     height: 100%;
-    padding-top: 2rem;
+    padding: 2rem 0;
     background-color:  rgb(10, 73, 93);
     color: #fff;
 }
