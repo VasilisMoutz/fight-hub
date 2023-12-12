@@ -89,7 +89,7 @@ Once you have installed the prerequisites, follow these steps to set up your dev
     export const environment = {
       production: false,
       api: {
-        url: 'http://localhost:5000/', // Your custom server URL
+        url: 'http://localhost:3000/', // Your custom server URL
       },
     };
 
