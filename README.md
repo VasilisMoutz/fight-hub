@@ -102,10 +102,12 @@ Once you have installed the prerequisites, follow these steps to set up your dev
    ng serve
 
 ## Usage
-For complete user experience logging in is required. You are welcome to create your own account. Alternatively, you can use the following dummy account details:
+For complete user experience logging in is required. If you choose to use the default deployed backend there is dummy account available:
 
 - **Email:** test@gmail.com
 - **Password:** abcABC1!
+
+Alternatively, You can allways create your own account. 
 
 ## Routes
 
