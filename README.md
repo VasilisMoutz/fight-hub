@@ -87,7 +87,6 @@ Once you have installed the prerequisites, follow these steps to set up your dev
 
     ```typescript
     export const environment = {
-      production: false,
       api: {
         url: 'http://localhost:3000/', // Your custom server URL
       },
